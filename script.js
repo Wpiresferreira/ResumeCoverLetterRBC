@@ -6,7 +6,7 @@ function saveAsPdf(element) {
     element.style.display = "none";
     showResume.style.display = "none";
     showCoverLetter.style.display = "none";
-    html2pdf().from(element.closest("body")).save(resume.style.display =="none"?'CoverLetterWagnerFerreira.pdf': 'ResumerWagnerFerreira.pdf');
+    html2pdf().from(element.closest("body")).save(resume.style.display =="none"?'CoverLetterWagnerFerreira.pdf': 'ResumeWagnerFerreira.pdf');
     setTimeout(() => {
         element.style.display = "inline-block";
         showResume.style.display = "inline-block";
