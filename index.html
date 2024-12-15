@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Using Font Awesome -->
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./mysttyle.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="./script.js" defer></script>
+
+    <title>Wagner Pires Ferreira</title>
+  </head>
+  <body>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onclick="saveAsPdf(this)">Save as PDF</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="showCoverLetter" onclick="toggleResumeCoverLetter(this)">Show Cover Letter</button>
+    <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="showResume" onclick="toggleResumeCoverLetter(this)">Show Resume</button>
+    <div id="coverLetter">
+      <div class="font-bold" id="title">RBC Royal Bank of Canada</div>
+      <div id="body">
+        Wagner Ferreira
+        <br />
+        <br />
+
+        Calgary, AB
+        <br />
+        wagner_pires@icloud.com
+        <br />
+        <br />
+
+        Dec 14, 2024
+        <br />
+        <br />
+        <br />
+
+        Dear Recruiter,
+        <br />
+        <br />
+
+        The job posting for Software Developer at RBC sparked my interest. I was
+        excited to find that my qualifications and personal strengths align with
+        the role description.
+        <br />
+        <br />
+
+        I bring a comprehensive set of skills that I believe will be valuable to
+        RBC. In my program at Bow Valley College, I had the opportunity to learn
+        and apply the knowledge to build solutions for real problems and
+        increase efficiency using modern tools.
+        <br />
+        <br />
+
+        I am excited to contribute my talents and knowledge in programming
+        toward your team efforts. As a student, my focus on learning and
+        applying new technologies to solve real problems and help teams to
+        increase their efficiency keep motivated to learn and contribute more.
+        <br />
+        <br />
+
+        Please review my enclosed resume for a more in-depth illustration of my
+        qualifications. I would appreciate the opportunity to interview at your
+        earliest convenience. I'm eager to discuss how my personality and
+        background fit the Software Developer role.
+        <br />
+        <br />
+
+        Thank you for your time and consideration of my candidacy.
+        <br />
+        <br />
+
+        Sincerely,
+        <br />
+        <br />
+
+        Wagner Ferreira
+      </div>
+    </div>
+    <div id="resume" class="m-10 bg-sky-100" >
+      <div class="text-[30px] p-8 text-center w-full font-bold">
+        WAGNER FERREIRA
+      </div>
+      <div class="text-center border-b-2 border-b-black pb-2">
+        <a href="mailto:wagner_pires@icloud.com">
+          <span class="fa fa-envelope"></span>
+          wagner_pires@icloud.com |
+        </a>
+        <a href="tel:+14036176358">
+          <span class="fa fa-phone"></span>
+          (403) 617-6358 |
+        </a>
+        <span class="fa fa-map-marker"></span>
+        Calgary, AB <br />
+        <a href="https://www.linkedin.com/in/wagnerpferreira/">
+          <span class="fa fa-linkedin"></span>
+          wagnerpferreira |</a
+        >
+        <a href="https://github.com/Wpiresferreira">
+          <span class="fa fa-github"></span>
+          Wpiresferreira
+        </a>
+      </div>
+      <div class="m-5 mb-0 font-bold">Summary</div>
+      <div class="mx-5 text-justify">
+        Software developer with knowledge of software development and testing.
+        Seeking to utilize broad educational background with excellent
+        analytical, technical, and programming skills to thrive as an
+        entry-level software developer.
+      </div>
+      <div class="m-5 mb-0 font-bold">Skills</div>
+      <div class="mx-5 text-justify">
+        • Web programming: JavaScript Frameworks and Libraries like Next, React,
+        Angular, Tailwind.
+        <br />
+        • Backend development: Server-side applications using Node.js, RESTful
+        API.
+        <br />
+        • Database: Design, implement and manage database using MS SQL and
+        Postgres SQL.
+        <br />
+        • .NET, C#, WPF, Windows Forms, Java applications.
+        <br />
+        • Mobile applications: Using Java with Android Studio.
+      </div>
+      <div class="m-5 mb-0 font-bold">Education</div>
+      <div class="mx-5 text-justify">
+        • 2023-2025, <b>Diploma</b> in Software Development <br />Bow Valley
+        College <br />Cumulative GPA : 3.78
+      </div>
+      <div class="mx-5 text-justify">
+        • 2001-2004, <b>Bachelor</b> of Science in Accounting<br />Universidade
+        do Estado da Bahia <br />
+      </div>
+      <div class="m-5 mb-0 font-bold">Experience</div>
+      <div class="mx-5 text-justify">
+        <p>• 02/2023 - Actual, <b>Door Dash</b>, Calgary, AB</p>
+        <p class="font-bold ml-5">Courier Driver</p>
+        <p class="ml-5">Efficient Delivery.</p>
+        <p class="ml-5">
+          Customer Service: Achieve high ratings by delivering exceptional
+          services.
+        </p>
+      </div>
+      <div class="mx-5 text-justify">
+        <p>
+            • 03/2011 - 11/2022, <b>Caixa Econômica Federal,</b> Salvador, Brazil
+        </p>
+        <p class="font-bold ml-5">Bank Clerk</p>
+        <p class="ml-5">Customer service.</p>
+        <p class="ml-5">
+          Built and maintained loyal, long-term customer relationships
+        </p>
+        <p class="ml-5">
+          Adhered to bank and legal guidelines for reporting, loan/mortgages
+          approvals.
+        </p>
+        <p class="ml-5">
+          Help Customers for banking needs, including loans/mortgages.
+        </p>
+        <p class="ml-5">Offer banking and insurance products.</p>
+      </div>
+
+      <div class="m-5 mb-0 font-bold">Project</div>
+      <div class="mx-5 text-justify">
+        <li>
+          <b>Stock Market Simulator</b> – Language used: Java. Mobile app for
+          Android that retrieves quotes in real-time of US 500 biggest stocks
+          and simulates virtual transactions (buy and sell). Users can select
+          some stocks to track their prices, at the time they can gain
+          confidence to start to invest in stock market.
+        </li>
+      </div>
+    </div>
+  </body>
+</html>

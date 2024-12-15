@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+}
+
+
+
+#title{
+    font-weight: 700;
+    margin: 2rem 2rem 0 2rem;
+    padding: 2rem;
+    background-color: rgb(17,48,101);
+    color: #ffffff;
+    font-size: x-large;
+}
+#body{
+    font-weight: 400;
+    margin: 0 2rem 2rem 8rem;
+    padding: 1rem;
+    text-align: justify;
+    border-left: 1px solid gray;
+}
+
+#coverLetter{
+    display: none;
+}
